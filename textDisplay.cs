@@ -191,4 +191,12 @@ using System.IO;
 			Console.WriteLine("You {0}ed the goose for {1} damage!", Catch.ActionPhrase(), resistance);
 			continueKey = Console.ReadKey();
 		}
+		public static string UppercaseFirst(string s)
+		{
+			if(string.IsNullOrEmpty(s))
+			{
+				return string.Empty;
+			}
+			return char.ToUpper(s[0]) + s.Substring(1);
+		}
 	}

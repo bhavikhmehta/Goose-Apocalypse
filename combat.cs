@@ -28,7 +28,7 @@ class Combat
 		}
 
 		//replace Yes with randomized phrase
-		TextDisplay.PositiveBannerMessage(Catch.ExclaimPhrase() + "! You won!");
+		TextDisplay.PositiveBannerMessage(TextDisplay.UppercaseFirst(Catch.ExclaimPhrase()) + "! You won!");
 	}
 
 	public void Display()
