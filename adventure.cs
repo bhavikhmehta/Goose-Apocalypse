@@ -5,7 +5,7 @@ class Adventure
 {
 	static void Main()
 	{
-		Console.SetWindowSize(190, 50);
+		Console.SetWindowSize(200, 75);
 		Character mainChar = new Character();
 		Combat battle;
 
