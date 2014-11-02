@@ -157,4 +157,17 @@ using System.IO;
 			continueKey = Console.ReadKey();
 			Console.Clear();
 		}
+		public static void BattleStats()
+		{
+			ConsoleKeyInfo continueKey;
+			Console.WriteLine("Press any key to attack");
+			continueKey = Console.ReadKey();
+			Console.Clear();
+		}
+		public static void BattleTurn(double resistance)
+		{
+			ConsoleKeyInfo continueKey;
+			Console.WriteLine("You struck the goose for {0} damage!", resistance);
+			continueKey = Console.ReadKey();
+		}
 	}
