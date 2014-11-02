@@ -7,11 +7,3 @@ static class Timers
 		return string.Format( "{0:t}", DateTime.Now );
 	}
 }
-
-class program
-{
-	static void Main()
-	{
-		Console.WriteLine( Timers.CurrentTime());
-	}
-}
