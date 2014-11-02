@@ -5,6 +5,8 @@ class Combat
 	Character c;
 	int gooseDamage = 1;
 	int gooseHealth = 3;
+	Random rand = new Random;
+
 	public Combat( Character c )
 	{
 		this.c = c;
@@ -12,7 +14,8 @@ class Combat
 		{
 			Display();
 			c.Health = c.Health - gooseDamage;
-			gooseHealth = gooseHealth - (int) c.Resistance;
+
+			if( rand.Next( 1, 101 ) >= c.Tolerance * 100 )gooseHealth = gooseHealth - (int) c.Resistance;
 		}
 	}
 
