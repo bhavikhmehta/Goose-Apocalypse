@@ -26,9 +26,9 @@ class Combat
 				TextDisplay.ContinueText();
 			}
 		}
-		
+
 		//replace Yes with randomized phrase
-		TextDisplay.PositiveBannerMessage("Yes! You won!");
+		TextDisplay.PositiveBannerMessage(Catch.ExclaimPhrase() + "! You won!");
 	}
 
 	public void Display()

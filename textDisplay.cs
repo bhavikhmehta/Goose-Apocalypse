@@ -69,6 +69,27 @@ using System.IO;
 			Console.BackgroundColor = ConsoleColor.Black;
 			Console.ForegroundColor = ConsoleColor.White;
 		}
+		public static void Chapter(string centeredText)
+		{
+			string halfBorder = new string('-', (Console.WindowWidth - centeredText.Length) / 2);
+			string fullBorder = new string('-', Console.WindowWidth);
+
+			Console.BackgroundColor = ConsoleColor.DarkBlue;
+			Console.ForegroundColor = ConsoleColor.White;
+			Console.Write(fullBorder);
+			if(centeredText.Length % 2 == 0)
+			{
+				Console.Write(halfBorder + centeredText + halfBorder);
+			}
+			else
+			{
+				Console.Write(halfBorder + centeredText + halfBorder + '-');
+			}
+			Console.Write(fullBorder);
+			Console.BackgroundColor = ConsoleColor.Black;
+			Console.ForegroundColor = ConsoleColor.White;
+		}
+
 		
 		//green on black
 		public static void GreenBlackWrite(string centeredText)
@@ -167,7 +188,7 @@ using System.IO;
 		public static void BattleTurn(double resistance)
 		{
 			ConsoleKeyInfo continueKey;
-			Console.WriteLine("You struck the goose for {0} damage!", resistance);
+			Console.WriteLine("You {0}ed the goose for {1} damage!", Catch.ActionPhrase(), resistance);
 			continueKey = Console.ReadKey();
 		}
 	}

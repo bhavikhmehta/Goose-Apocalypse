@@ -5,12 +5,15 @@ class Adventure
 {
 	static void Main()
 	{
-		Console.SetWindowSize(190, 50);
+		//Console.SetWindowSize(190, 50);
 		Character mainChar = new Character();
 		Combat battle;
 
 		//game start
 		TextDisplay.EventBannerMessage("Game Initialized");
+
+		TextDisplay.Chapter("Chapter 1: The Beginning");
+		/*
 
 		//scenario 1
 		TextDisplay.SlowTypeHor("You wake up from the CHE102 lecture and mumble something about converting pounds to kg");
@@ -21,13 +24,12 @@ class Adventure
 
 		TextDisplay.SlowTypeHor("You've been asleep for hours...");
 		TextDisplay.SlowTypeHor("You get up and leave the lecture hall");
-		
-		//some shit happens you find some guy from systems
+		TextDisplay.SlowTypeHor("You see a seemingly clueless person standing against a wall...");
 		TextDisplay.TheyTalk("My name is Bob and I'm in SYDE");
 		TextDisplay.YouTalk("This isn't frosh week you don't need to identify yourself by your program...Relax.");
 		TextDisplay.TheyTalk("Okay :(");
 		TextDisplay.YouTalk("What the actual fudge is going? Where is everyone?");
-		TextDisplay.TheyTalk("I don't know, I just woke up from my ECE100A lecture and no one was there...");
+		TextDisplay.TheyTalk("I don't know, I just woke up after falling in ECE100A and no one was around...");
 		TextDisplay.YouTalk("You really shouldn't be sleeping in class.");
 		
 		TextDisplay.NegativeBannerMessage("*Honk* *Honk*");
@@ -46,10 +48,16 @@ class Adventure
 
 		TextDisplay.NegativeBannerMessage("Bob Died.");
 		TextDisplay.Continue();
-
+	
+		*/
 		TextDisplay.NegativeBannerMessage("Engagement: Enraged Goose");
 		TextDisplay.Continue();
-
 		battle = new Combat(mainChar);
+
+		TextDisplay.SlowTypeHor("You succesfully avenged Bob's passing and exit the room in search of sanctuary");
+		TextDisplay.SlowTypeHor("The halls are empty and you feel very strange walking through them");
+		TextDisplay.SlowTypeHor("You see the shadow of what seems to be an older individual around the corner");
+		TextDisplay.SlowTypeHor("");
+
 	}
 }

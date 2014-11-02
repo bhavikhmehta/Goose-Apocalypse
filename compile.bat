@@ -1,1 +1,1 @@
-csc adventure.cs textDisplay.cs timers.cs character.cs resistor.cs combat.cs
+csc adventure.cs textDisplay.cs timers.cs character.cs resistor.cs combat.cs catch.cs
