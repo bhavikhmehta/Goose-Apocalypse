@@ -5,14 +5,14 @@ class Character
 {
 	public string name;
 	public int morality;
-	Resistor currentResistor;
-	public int health;
+	public Resistor currentResistor;
+	public double health;
 
 	public Character( )
 	{
 		this.morality = 0;
 		this.health = 100;	
-		this.currentResistor = new Resistor( 1d, 0.2 );
+		this.currentResistor = new Resistor( 8d, 0.3 );
 	}
 	public string Name
 	{
@@ -33,10 +33,10 @@ class Character
 		}
 		set
 		{
-			this.morality = value;
+			this.morality = this.morality + value;
 		}
 	}
-	public int Health
+	public double Health
 	{
 		get
 		{

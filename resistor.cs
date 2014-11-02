@@ -41,7 +41,7 @@ class Resistor
     }
 
     //swapping for a new resistor
-    public void Swap (double tolerance, double resistance)
+    public void Swap (double resistance, double tolerance)
     {
         this.resistance = resistance;
         this.tolerance = tolerance;

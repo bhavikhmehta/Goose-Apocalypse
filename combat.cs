@@ -2,23 +2,30 @@ using System;
 
 class Combat
 {	
+
 	Character c;
-	int gooseDamage = 1;
-	int gooseHealth = 3;
+	double gooseDamage;
+	double gooseHealth = 100;
+	double charDamage;
 	Random rand = new Random();
 
+	
 	public Combat( Character c )
 	{
 		this.c = c;
 		while( ! (c.Health <= 0 || gooseHealth <= 0) )
 		{
+
+			gooseDamage = Math.Ceiling(((c.Health) * (rand.Next( 0 , 20))/100.0));
 			Display();
 			c.Health = c.Health - gooseDamage;
+			charDamage = Math.Ceiling((gooseHealth - (c.Resistance) * (rand.Next(80,110)/100.0)));
+
 
 			if( rand.Next( 1, 101 ) >= c.Tolerance * 100 )
 			{
-				gooseHealth = gooseHealth - (int) c.Resistance;
-				TextDisplay.BattleTurn(c.Resistance);
+				gooseHealth = charDamage;
+				TextDisplay.BattleTurn(Math.Ceiling((c.Resistance) * (rand.Next(90,110)/100.0)));
 			}
 			else
 			{
@@ -44,7 +51,7 @@ class Combat
 //{
 //	static void Main()
 //	{	
-//		Character c = new Character( "john" );
+//		Character c = new Character();
 //		Combat n = new Combat(c);
 //	}
 //}

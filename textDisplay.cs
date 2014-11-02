@@ -188,7 +188,7 @@ using System.IO;
 		public static void BattleTurn(double resistance)
 		{
 			ConsoleKeyInfo continueKey;
-			Console.WriteLine("You {0}ed the goose for {1} damage!", Catch.ActionPhrase(), resistance);
+			Console.WriteLine("You {0}ed the goose for {1} damage!", Catch.ActionPhrase(), (resistance));
 			continueKey = Console.ReadKey();
 		}
 		public static string UppercaseFirst(string s)

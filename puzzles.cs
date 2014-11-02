@@ -31,55 +31,55 @@ class Puzzles
 
              if (choice == "rock" && ai == 1)
              {
-                Console.WriteLine("InsertName chose paper, you tie.");
+                Console.WriteLine("Prof Hirani chose paper, you tie.");
                 totalround++;
              }
              if (choice == "rock" && ai == 2)
              {
-                Console.WriteLine("InsertName chose paper, you lose.");
+                Console.WriteLine("Prof Hirani chose paper, you lose.");
                 antiround++;
                 totalround++;
              }
              if (choice == "rock" && ai == 3)
              {
-                Console.WriteLine("InsertName chose scissors, you win.");
+                Console.WriteLine("Prof Hirani chose scissors, you win.");
                 round++;
                 totalround++;
              }
  
              if (choice == "paper" && ai == 1)
              {
-                Console.WriteLine("InsertName chose rock, you win.");
+                Console.WriteLine("Prof Hirani chose rock, you win.");
                 round++;
                 totalround++;                
              }
              if (choice == "paper" && ai == 2)
              { 
-                Console.WriteLine("InsertName chose paper, you tie.");
+                Console.WriteLine("Prof Hirani chose paper, you tie.");
                 totalround++;
              } 
              if (choice == "paper" && ai == 3)
              {
-                Console.WriteLine("InsertName chose scissors, you lose.");
+                Console.WriteLine("Prof Hirani chose scissors, you lose.");
                 antiround++;
                 totalround++;
              }
  
              if (choice == "scissors" && ai == 1)
              {
-                Console.WriteLine("InsertName chose rock, you lose.");
+                Console.WriteLine("Prof Hirani chose rock, you lose.");
                 antiround++;
                 totalround++;
              }
              if (choice == "scissors" && ai == 2)
              {
-                Console.WriteLine("InsertName chose paper, you win.");
+                Console.WriteLine("Prof Hirani chose paper, you win.");
                 round++;
                 totalround++;
              }
              if (choice == "scissors" && ai == 3)
              {
-                Console.WriteLine("InsertName chose scissors, you tie.");
+                Console.WriteLine("Prof Hirani chose scissors, you tie.");
                 totalround++;
              }
              if((round >= antiround) && totalround == 5)
